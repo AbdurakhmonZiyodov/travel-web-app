@@ -20,10 +20,10 @@ export function Destinations() {
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        <div className="mt-12 text-center">
           <Link
             href="/tours"
-            className="btn-outline inline-flex items-center gap-2"
+            className="btn-outline"
           >
             {t("viewAll")}
             <ArrowRight className="h-4 w-4" />

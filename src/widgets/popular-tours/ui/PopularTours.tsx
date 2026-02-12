@@ -14,16 +14,16 @@ export function PopularTours() {
       <div className="container-main">
         <SectionTitle title={t("title")} subtitle={t("subtitle")} />
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {TOURS.slice(0, 6).map((tour) => (
             <TourCard key={tour.id} tour={tour} />
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        <div className="mt-12 text-center">
           <Link
             href="/tours"
-            className="btn-primary inline-flex items-center gap-2"
+            className="btn-primary"
           >
             {t("viewAll")}
             <ArrowRight className="h-4 w-4" />

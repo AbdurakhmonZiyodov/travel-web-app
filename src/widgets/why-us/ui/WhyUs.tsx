@@ -41,17 +41,17 @@ export function WhyUs() {
             return (
               <div
                 key={reason.key}
-                className="group rounded-2xl bg-white p-6 shadow-sm transition-all hover:shadow-md"
+                className="group rounded-2xl border border-gray-100 bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1"
               >
                 <div
                   className={`flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br ${reason.gradient} text-white shadow-md`}
                 >
                   <Icon className="h-6 w-6" />
                 </div>
-                <h3 className="mt-5 text-lg font-semibold text-text-primary">
+                <h3 className="mt-6 text-lg font-semibold text-text-primary">
                   {t(`${reason.key}.title`)}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+                <p className="mt-3 text-sm leading-relaxed text-text-secondary">
                   {t(`${reason.key}.description`)}
                 </p>
               </div>

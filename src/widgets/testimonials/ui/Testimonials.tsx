@@ -12,7 +12,7 @@ export function Testimonials() {
       <div className="container-main">
         <SectionTitle title={t("title")} subtitle={t("subtitle")} />
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
           {TESTIMONIALS.map((testimonial) => (
             <TestimonialCard
               key={testimonial.id}

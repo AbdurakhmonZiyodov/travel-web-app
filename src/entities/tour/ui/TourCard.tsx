@@ -19,9 +19,13 @@ export function TourCard({ tour, className }: TourCardProps) {
   return (
     <Link
       href={`/tours/${tour.slug}`}
-      className={cn("card group block", className)}
+      className={cn(
+        "group flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1",
+        className
+      )}
     >
-      <div className="relative h-52 overflow-hidden">
+      {/* Image */}
+      <div className="relative aspect-[4/3] w-full overflow-hidden bg-gray-100">
         <Image
           src={tour.image}
           alt={tour.title[locale]}
@@ -31,34 +35,35 @@ export function TourCard({ tour, className }: TourCardProps) {
         />
 
         {tour.isHot && (
-          <span className="absolute top-3 left-3 badge-secondary flex items-center gap-1">
+          <span className="absolute top-4 left-4 inline-flex items-center gap-1 rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-white shadow-md">
             <Flame className="h-3 w-3" />
             Hot
           </span>
         )}
 
-        <div className="absolute bottom-3 right-3 rounded-lg bg-white/90 px-3 py-1.5 backdrop-blur-sm">
-          <span className="text-xs text-text-secondary">{t("from")}</span>
-          <span className="ml-1 text-lg font-bold text-primary">
+        <div className="absolute bottom-4 right-4 rounded-xl bg-white/95 px-3.5 py-2 shadow-md backdrop-blur-sm">
+          <span className="text-xs text-text-muted">{t("from")} </span>
+          <span className="text-lg font-bold text-primary">
             ${tour.priceFrom}
           </span>
         </div>
       </div>
 
-      <div className="p-5">
-        <h3 className="text-lg font-semibold text-text-primary group-hover:text-primary transition-colors">
+      {/* Content */}
+      <div className="flex flex-1 flex-col p-5">
+        <h3 className="text-base font-semibold leading-snug text-text-primary group-hover:text-primary transition-colors">
           {tour.title[locale]}
         </h3>
-        <p className="mt-2 text-sm text-text-secondary line-clamp-2">
+        <p className="mt-2 text-sm leading-relaxed text-text-secondary line-clamp-2">
           {tour.description[locale]}
         </p>
 
-        <div className="mt-4 flex items-center gap-4 text-sm text-text-muted">
-          <span className="flex items-center gap-1">
+        <div className="mt-auto flex items-center gap-4 pt-4 text-sm text-text-muted">
+          <span className="flex items-center gap-1.5">
             <Clock className="h-4 w-4" />
             {tour.nights} {t("nights")}
           </span>
-          <span>
+          <span className="text-xs">
             {tour.isYearRound ? t("yearRound") : t("seasonal")}
           </span>
         </div>

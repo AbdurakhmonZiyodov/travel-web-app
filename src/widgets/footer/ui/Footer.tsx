@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@i18n/navigation";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { THEME } from "@/shared/config/theme";
@@ -8,24 +8,25 @@ import { FOOTER_NAV } from "@/shared/config/navigation";
 
 export function Footer() {
   const t = useTranslations();
+  const locale = useLocale() as "uz" | "ru" | "en";
   const year = new Date().getFullYear();
 
   return (
     <footer className="bg-primary-dark text-white">
-      <div className="container-main py-16">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container-main py-16 lg:py-20">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {/* Company Info */}
-          <div>
-            <div className="flex items-center gap-2">
+          <div className="lg:pr-4">
+            <div className="flex items-center gap-2.5">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/20 font-bold text-lg">
                 S
               </div>
               <span className="text-xl font-bold">{THEME.companyName}</span>
             </div>
-            <p className="mt-4 text-sm leading-relaxed text-white/70">
+            <p className="mt-5 text-sm leading-relaxed text-white/70">
               {t("footer.companyDesc")}
             </p>
-            <div className="mt-5 flex gap-3">
+            <div className="mt-6 flex gap-3">
               <a
                 href={THEME.socialLinks.telegram}
                 target="_blank"
@@ -62,13 +63,15 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="mb-5 font-semibold">{t("footer.quickLinks")}</h3>
-            <ul className="space-y-3">
+            <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white/90">
+              {t("footer.quickLinks")}
+            </h3>
+            <ul className="space-y-3.5">
               {FOOTER_NAV.quickLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/70 transition-colors hover:text-white"
+                    className="text-sm text-white/60 transition-colors hover:text-white"
                   >
                     {t(link.labelKey)}
                   </Link>
@@ -79,25 +82,27 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="mb-5 font-semibold">{t("footer.ourServices")}</h3>
-            <ul className="space-y-3">
+            <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white/90">
+              {t("footer.ourServices")}
+            </h3>
+            <ul className="space-y-3.5">
               <li>
-                <span className="text-sm text-white/70">
+                <span className="text-sm text-white/60">
                   {t("services.tourPackages.title")}
                 </span>
               </li>
               <li>
-                <span className="text-sm text-white/70">
+                <span className="text-sm text-white/60">
                   {t("services.visaSupport.title")}
                 </span>
               </li>
               <li>
-                <span className="text-sm text-white/70">
+                <span className="text-sm text-white/60">
                   {t("services.flightTickets.title")}
                 </span>
               </li>
               <li>
-                <span className="text-sm text-white/70">
+                <span className="text-sm text-white/60">
                   {t("services.insurance.title")}
                 </span>
               </li>
@@ -106,35 +111,37 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="mb-5 font-semibold">{t("footer.contactInfo")}</h3>
+            <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white/90">
+              {t("footer.contactInfo")}
+            </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-secondary" />
-                <span className="text-sm text-white/70">
-                  {THEME.companyAddress.uz}
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-secondary-light" />
+                <span className="text-sm leading-relaxed text-white/60">
+                  {THEME.companyAddress[locale]}
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-4 w-4 shrink-0 text-secondary" />
+                <Phone className="h-4 w-4 shrink-0 text-secondary-light" />
                 <a
                   href={`tel:${THEME.companyPhone.replace(/\s/g, "")}`}
-                  className="text-sm text-white/70 hover:text-white"
+                  className="text-sm text-white/60 transition-colors hover:text-white"
                 >
                   {THEME.companyPhone}
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-4 w-4 shrink-0 text-secondary" />
+                <Mail className="h-4 w-4 shrink-0 text-secondary-light" />
                 <a
                   href={`mailto:${THEME.companyEmail}`}
-                  className="text-sm text-white/70 hover:text-white"
+                  className="text-sm text-white/60 transition-colors hover:text-white"
                 >
                   {THEME.companyEmail}
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-secondary" />
-                <span className="text-sm text-white/70">
+                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-secondary-light" />
+                <span className="text-sm leading-relaxed text-white/60">
                   {t("footer.workingHoursValue")}
                 </span>
               </li>
@@ -146,7 +153,7 @@ export function Footer() {
       {/* Copyright */}
       <div className="border-t border-white/10">
         <div className="container-main flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
-          <p className="text-sm text-white/50">
+          <p className="text-sm text-white/40">
             {t("footer.copyright", { year })}
           </p>
           <div className="flex gap-6">
@@ -154,7 +161,7 @@ export function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-white/50 transition-colors hover:text-white"
+                className="text-sm text-white/40 transition-colors hover:text-white"
               >
                 {t(link.labelKey)}
               </Link>

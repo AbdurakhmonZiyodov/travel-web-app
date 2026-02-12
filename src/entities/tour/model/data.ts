@@ -31,7 +31,7 @@ export const TOURS: Tour[] = [
     destination: "Sharm El-Sheikh",
     country: "egypt",
     image:
-      "https://images.unsplash.com/photo-1539768942893-daf53e736b68?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1568322445389-f64ac2515020?w=800&h=600&fit=crop",
     priceFrom: 520,
     currency: "USD",
     nights: 7,

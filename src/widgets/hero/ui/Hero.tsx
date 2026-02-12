@@ -4,7 +4,13 @@ import { useTranslations } from "next-intl";
 import { TourSearch } from "@/features/tour-search";
 
 export function Hero() {
-  const t = useTranslations("hero");
+  const t = useTranslations();
+
+  const stats = [
+    { value: "7+", labelKey: "about.experience" },
+    { value: "5 000+", labelKey: "about.clients" },
+    { value: "50+", labelKey: "about.destinations" },
+  ];
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary-dark to-primary">
@@ -22,30 +28,26 @@ export function Hero() {
       <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-secondary/20 blur-3xl" />
       <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-accent/20 blur-3xl" />
 
-      <div className="container-main relative z-10 flex flex-col items-center px-4 py-24 text-center md:py-36 lg:py-44">
+      <div className="container-main relative z-10 flex flex-col items-center px-4 py-28 text-center md:py-40 lg:py-48">
         <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
-          {t("title")}
+          {t("hero.title")}
         </h1>
-        <p className="mt-6 max-w-xl text-lg text-white/80 md:text-xl">
-          {t("subtitle")}
+        <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80 md:text-xl">
+          {t("hero.subtitle")}
         </p>
         <div className="mt-10 w-full max-w-xl">
           <TourSearch />
         </div>
 
         {/* Stats */}
-        <div className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16">
-          {[
-            { value: "7+", label: "years" },
-            { value: "5000+", label: "clients" },
-            { value: "50+", label: "destinations" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
+        <div className="mt-20 grid grid-cols-3 gap-12 md:gap-20">
+          {stats.map((stat) => (
+            <div key={stat.labelKey} className="text-center">
               <div className="text-3xl font-bold text-white md:text-4xl">
                 {stat.value}
               </div>
-              <div className="mt-1 text-sm text-white/60 uppercase tracking-wider">
-                {stat.label}
+              <div className="mt-2 text-sm text-white/60 uppercase tracking-wider">
+                {t(stat.labelKey)}
               </div>
             </div>
           ))}
