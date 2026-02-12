@@ -21,109 +21,103 @@
 
 /* ──────────────────────────────────────────────
    Base styles
+   Tailwind v4 preflight already handles resets.
+   Custom base styles go inside @layer base so
+   they don't override utility classes.
    ────────────────────────────────────────────── */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
-  color: var(--color-text-primary);
-  background-color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  body {
+    font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+    color: var(--color-text-primary);
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 /* ──────────────────────────────────────────────
-   Button variants
+   Component classes
+   Inside @layer components so utilities can
+   still override when needed.
    ────────────────────────────────────────────── */
-.btn-primary {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 bg-secondary text-white px-6 py-3 hover:bg-secondary-light focus:ring-secondary;
-}
+@layer components {
+  /* ── Buttons ────────────────────────────────── */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 bg-secondary text-white px-6 py-3 hover:bg-secondary-light focus:ring-secondary;
+  }
 
-.btn-secondary {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 bg-primary text-white px-6 py-3 hover:bg-primary-light focus:ring-primary;
-}
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 bg-primary text-white px-6 py-3 hover:bg-primary-light focus:ring-primary;
+  }
 
-.btn-outline {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 border-2 border-primary text-primary px-6 py-3 hover:bg-primary hover:text-white focus:ring-primary;
-}
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 border-2 border-primary text-primary px-6 py-3 hover:bg-primary hover:text-white focus:ring-primary;
+  }
 
-.btn-ghost {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 text-primary px-4 py-2 hover:bg-surface focus:ring-primary;
-}
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 text-primary px-4 py-2 hover:bg-surface focus:ring-primary;
+  }
 
-.btn-sm {
-  @apply text-sm px-4 py-2;
-}
+  .btn-sm {
+    @apply text-sm px-4 py-2;
+  }
 
-.btn-lg {
-  @apply text-lg px-8 py-4;
+  .btn-lg {
+    @apply text-lg px-8 py-4;
+  }
+
+  /* ── Layout ─────────────────────────────────── */
+  .container-main {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-20 md:py-28;
+  }
+
+  /* ── Typography ─────────────────────────────── */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-text-primary;
+  }
+
+  .section-subtitle {
+    @apply mt-3 text-lg text-text-secondary max-w-2xl;
+  }
+
+  /* ── Card ────────────────────────────────────── */
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* ── Form elements ──────────────────────────── */
+  .input {
+    @apply w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-text-primary placeholder:text-text-muted focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-colors;
+  }
+
+  .textarea {
+    @apply w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-text-primary placeholder:text-text-muted focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-colors resize-none min-h-[120px];
+  }
+
+  /* ── Badges ──────────────────────────────────── */
+  .badge-primary {
+    @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium bg-primary/10 text-primary;
+  }
+
+  .badge-secondary {
+    @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium bg-secondary/10 text-secondary;
+  }
+
+  .badge-accent {
+    @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium bg-accent/10 text-accent;
+  }
 }
 
 /* ──────────────────────────────────────────────
-   Layout components
-   ────────────────────────────────────────────── */
-.container-main {
-  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
-}
-
-.section {
-  @apply py-20 md:py-28;
-}
-
-/* ──────────────────────────────────────────────
-   Typography
-   ────────────────────────────────────────────── */
-.section-title {
-  @apply text-3xl md:text-4xl font-bold text-text-primary;
-}
-
-.section-subtitle {
-  @apply mt-3 text-lg text-text-secondary max-w-2xl;
-}
-
-/* ──────────────────────────────────────────────
-   Card
-   ────────────────────────────────────────────── */
-.card {
-  @apply bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
-}
-
-/* ──────────────────────────────────────────────
-   Form elements
-   ────────────────────────────────────────────── */
-.input {
-  @apply w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-text-primary placeholder:text-text-muted focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-colors;
-}
-
-.textarea {
-  @apply w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-text-primary placeholder:text-text-muted focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-colors resize-none min-h-[120px];
-}
-
-/* ──────────────────────────────────────────────
-   Badges
-   ────────────────────────────────────────────── */
-.badge-primary {
-  @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium bg-primary/10 text-primary;
-}
-
-.badge-secondary {
-  @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium bg-secondary/10 text-secondary;
-}
-
-.badge-accent {
-  @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium bg-accent/10 text-accent;
-}
-
-/* ──────────────────────────────────────────────
-   Misc overrides
+   Third-party overrides (must be unlayered)
    ────────────────────────────────────────────── */
 .swiper-button-prev,
 .swiper-button-next {
