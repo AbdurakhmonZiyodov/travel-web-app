@@ -1,0 +1,148 @@
+import type { Tour } from "./types";
+
+export const TOURS: Tour[] = [
+  {
+    id: "1",
+    slug: "turkey-antalya",
+    destination: "Antalya",
+    country: "turkey",
+    image:
+      "https://images.unsplash.com/photo-1589561454226-796a8aa89b05?w=800&h=600&fit=crop",
+    priceFrom: 590,
+    currency: "USD",
+    nights: 7,
+    isHot: true,
+    isYearRound: true,
+    includes: ["flight", "hotel", "transfer", "insurance"],
+    title: {
+      uz: "Turkiya — Antalya",
+      ru: "Турция — Анталья",
+      en: "Turkey — Antalya",
+    },
+    description: {
+      uz: "Antalyaning eng yaxshi mehmonxonalarida dam oling. Dengiz, quyosh va ajoyib xizmat sizni kutmoqda.",
+      ru: "Отдохните в лучших отелях Антальи. Море, солнце и отличный сервис ждут вас.",
+      en: "Relax at the best hotels in Antalya. Sea, sun and excellent service await you.",
+    },
+  },
+  {
+    id: "2",
+    slug: "egypt-sharm-el-sheikh",
+    destination: "Sharm El-Sheikh",
+    country: "egypt",
+    image:
+      "https://images.unsplash.com/photo-1539768942893-daf53e736b68?w=800&h=600&fit=crop",
+    priceFrom: 520,
+    currency: "USD",
+    nights: 7,
+    isHot: true,
+    isYearRound: true,
+    includes: ["flight", "hotel", "transfer", "insurance", "meals"],
+    title: {
+      uz: "Misr — Sharm El-Sheyx",
+      ru: "Египет — Шарм-эль-Шейх",
+      en: "Egypt — Sharm El-Sheikh",
+    },
+    description: {
+      uz: "Qizil dengiz sohilida ajoyib dam olish. Snorkling, piramidalar va sharqona mehmonnavozlik.",
+      ru: "Прекрасный отдых на берегу Красного моря. Снорклинг, пирамиды и восточное гостеприимство.",
+      en: "Wonderful vacation on the Red Sea coast. Snorkeling, pyramids and oriental hospitality.",
+    },
+  },
+  {
+    id: "3",
+    slug: "uae-dubai",
+    destination: "Dubai",
+    country: "uae",
+    image:
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop",
+    priceFrom: 690,
+    currency: "USD",
+    nights: 5,
+    isHot: false,
+    isYearRound: true,
+    includes: ["flight", "hotel", "transfer", "insurance"],
+    title: {
+      uz: "BAA — Dubay",
+      ru: "ОАЭ — Дубай",
+      en: "UAE — Dubai",
+    },
+    description: {
+      uz: "Dubayning hashamatli mehmonxonalari, ajoyib savdo markazlari va cho'l safarilari sizni kutmoqda.",
+      ru: "Роскошные отели Дубая, удивительные торговые центры и сафари по пустыне ждут вас.",
+      en: "Luxurious Dubai hotels, amazing shopping malls and desert safaris await you.",
+    },
+  },
+  {
+    id: "4",
+    slug: "thailand-phuket",
+    destination: "Phuket",
+    country: "thailand",
+    image:
+      "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=800&h=600&fit=crop",
+    priceFrom: 850,
+    currency: "USD",
+    nights: 10,
+    isHot: false,
+    isYearRound: false,
+    includes: ["flight", "hotel", "transfer", "insurance", "meals"],
+    title: {
+      uz: "Tailand — Phuket",
+      ru: "Таиланд — Пхукет",
+      en: "Thailand — Phuket",
+    },
+    description: {
+      uz: "Ekzotik orollar, tropik o'rmonlar va ajoyib oshxona. Tailandda unutilmas dam olish.",
+      ru: "Экзотические острова, тропические леса и удивительная кухня. Незабываемый отдых в Таиланде.",
+      en: "Exotic islands, tropical forests and amazing cuisine. Unforgettable vacation in Thailand.",
+    },
+  },
+  {
+    id: "5",
+    slug: "georgia-tbilisi",
+    destination: "Tbilisi",
+    country: "georgia",
+    image:
+      "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&h=600&fit=crop",
+    priceFrom: 430,
+    currency: "USD",
+    nights: 5,
+    isHot: true,
+    isYearRound: true,
+    includes: ["flight", "hotel", "transfer"],
+    title: {
+      uz: "Gruziya — Tbilisi",
+      ru: "Грузия — Тбилиси",
+      en: "Georgia — Tbilisi",
+    },
+    description: {
+      uz: "Qadimiy shahar, tog'lar, ajoyib vino va mehmonnavozlik. Gruziya sizni hayratda qoldiradi.",
+      ru: "Древний город, горы, прекрасное вино и гостеприимство. Грузия вас удивит.",
+      en: "Ancient city, mountains, wonderful wine and hospitality. Georgia will amaze you.",
+    },
+  },
+  {
+    id: "6",
+    slug: "azerbaijan-baku",
+    destination: "Baku",
+    country: "azerbaijan",
+    image:
+      "https://images.unsplash.com/photo-1609856878074-cf31e21ccb6b?w=800&h=600&fit=crop",
+    priceFrom: 540,
+    currency: "USD",
+    nights: 7,
+    isHot: false,
+    isYearRound: true,
+    includes: ["flight", "hotel", "transfer", "insurance"],
+    title: {
+      uz: "Ozarbayjon — Boku",
+      ru: "Азербайджан — Баку",
+      en: "Azerbaijan — Baku",
+    },
+    description: {
+      uz: "Zamonaviy arxitektura va qadimiy madaniyat uyg'unligi. Boku — Sharq va G'arb tutashgan shahar.",
+      ru: "Сочетание современной архитектуры и древней культуры. Баку — город, где встречаются Восток и Запад.",
+      en: "A blend of modern architecture and ancient culture. Baku — where East meets West.",
+    },
+  },
+];

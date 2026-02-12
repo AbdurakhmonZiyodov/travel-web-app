@@ -1,0 +1,226 @@
+{
+  "metadata": {
+    "title": "Sayohat Tour — Toshkentdagi ishonchli turoperator",
+    "description": "O'zbekistondagi eng yaxshi turistik agentlik. Dunyo bo'ylab turlar, aviachiptalar, viza ko'magi va sug'urta xizmatlari."
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "tours": "Turlar",
+    "hotTours": "Issiq turlar",
+    "services": "Xizmatlar",
+    "destinations": "Yo'nalishlar",
+    "contacts": "Aloqa"
+  },
+  "hero": {
+    "title": "Dunyoni biz bilan kashf eting",
+    "subtitle": "O'zbekistondagi ishonchli sayohat hamkoringiz. Eng yaxshi narxlarda sifatli turlar.",
+    "cta": "Tur tanlash",
+    "searchPlaceholder": "Qayerga sayohat qilmoqchisiz?"
+  },
+  "destinations": {
+    "title": "Mashhur yo'nalishlar",
+    "subtitle": "Sayohatchilar orasida eng ommabop davlatlar va kurortlar",
+    "viewAll": "Barcha yo'nalishlar",
+    "nights": "kecha",
+    "from": "dan",
+    "perPerson": "kishi/uchun"
+  },
+  "categories": {
+    "title": "Tur turlari",
+    "subtitle": "Har qanday did va byudjetga mos turlar",
+    "beach": "Plyaj dam olish",
+    "excursions": "Ekskursiyalar",
+    "europe": "Yevropa",
+    "cruises": "Kruizlar",
+    "skiing": "Tog' chang'isi",
+    "health": "Salomatlik"
+  },
+  "popularTours": {
+    "title": "Ommabop turlar",
+    "subtitle": "Mijozlarimiz eng ko'p tanlagan turlar",
+    "viewAll": "Barcha turlar",
+    "details": "Batafsil",
+    "book": "Buyurtma berish",
+    "from": "dan",
+    "perPerson": "kishi/uchun",
+    "nights": "kecha",
+    "days": "kun",
+    "yearRound": "Yil davomida",
+    "seasonal": "Mavsumiy"
+  },
+  "whyUs": {
+    "title": "Nega aynan biz?",
+    "subtitle": "Minglab mijozlar bizni tanlashining sabablari",
+    "worldwide": {
+      "title": "Dunyo bo'ylab turlar",
+      "description": "Qulay narxlarda sifatli turlar. 50 dan ortiq davlatga yo'nalishlar."
+    },
+    "insurance": {
+      "title": "Tibbiy sug'urta",
+      "description": "Chet elda ishonchli himoya. Sizning xavfsizligingiz — bizning ustuvorligimiz."
+    },
+    "tickets": {
+      "title": "Avia va temir yo'l chiptalari",
+      "description": "Istalgan yo'nalishga qulay takliflar. Tez va oson bron qilish."
+    },
+    "visa": {
+      "title": "Viza ko'magi",
+      "description": "Viza olishning barcha bosqichlarida maslahat va ko'maklashish."
+    }
+  },
+  "testimonials": {
+    "title": "Mijozlar fikri",
+    "subtitle": "Biz bilan sayohat qilganlarning taassurotlari"
+  },
+  "cta": {
+    "title": "Orzuingizdagi sayohatni rejalashtiring",
+    "subtitle": "Mutaxassislarimiz sizga eng yaxshi turni tanlashda yordam beradi",
+    "button": "Bepul maslahat olish",
+    "phone": "Qo'ng'iroq qiling"
+  },
+  "footer": {
+    "companyDesc": "O'zbekistondagi ishonchli turoperator. 2017-yildan beri sifatli sayohat xizmatlari.",
+    "quickLinks": "Tezkor havolalar",
+    "ourServices": "Xizmatlarimiz",
+    "contactInfo": "Aloqa ma'lumotlari",
+    "workingHours": "Ish vaqti",
+    "workingHoursValue": "Du–Ju: 09:00 – 18:00, Sha: 10:00 – 15:00",
+    "copyright": "© {year} Sayohat Tour. Barcha huquqlar himoyalangan.",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "subtitle": "O'zbekistonning ishonchli va tajribali turoperatori",
+    "description": "«Sayohat Tour» — 2017-yildan beri faoliyat yuritayotgan litsenziyalangan turoperator. Biz mijozlarimizga dunyo bo'ylab eng yaxshi turlarni taklif etamiz. Kompaniyamiz O'zbekiston Respublikasi Turizm qo'mitasi tomonidan berilgan litsenziya asosida ishlaydi.",
+    "mission": {
+      "title": "Bizning missiyamiz",
+      "description": "Har bir mijozga unutilmas sayohat tajribasini taqdim etish va sayohatni hammaga qulay qilish."
+    },
+    "vision": {
+      "title": "Bizning qadriyatlarimiz",
+      "description": "Ishonchlilik, shaffoflik, individual yondashuv va eng yuqori xizmat sifati."
+    },
+    "experience": "Yillik tajriba",
+    "clients": "Mamnun mijozlar",
+    "destinations": "Yo'nalishlar",
+    "tours": "O'tkazilgan turlar"
+  },
+  "tours": {
+    "title": "Turlar",
+    "subtitle": "Eng yaxshi narxlarda sifatli dam olish",
+    "filter": "Filtrlash",
+    "all": "Barchasi",
+    "nights": "kecha",
+    "days": "kun",
+    "from": "dan",
+    "perPerson": "kishi/uchun",
+    "details": "Batafsil",
+    "book": "Buyurtma berish",
+    "included": "Tur tarkibiga kiradi",
+    "flight": "Aviaparvoz",
+    "hotel": "Mehmonxona",
+    "transfer": "Transfer",
+    "insurance": "Sug'urta",
+    "meals": "Ovqatlanish",
+    "guide": "Gid xizmati"
+  },
+  "services": {
+    "title": "Xizmatlar",
+    "subtitle": "Sayohatingiz uchun kerakli barcha xizmatlar",
+    "tourPackages": {
+      "title": "Tur paketlar",
+      "description": "Dunyo bo'ylab to'liq tayyorlangan tur paketlar. Aviaparvoz, mehmonxona, transfer va sug'urta kiritilgan."
+    },
+    "visaSupport": {
+      "title": "Viza ko'magi",
+      "description": "Viza olishning barcha bosqichlarida professional maslahat va ko'maklashish. Hujjatlarni tayyorlashda yordam."
+    },
+    "flightTickets": {
+      "title": "Aviachiptalar",
+      "description": "Istalgan yo'nalishga aviachiptalarni qulay narxlarda bron qilish. Charter va muntazam reyslar."
+    },
+    "insurance": {
+      "title": "Sayohat sug'urtasi",
+      "description": "Chet elda ishonchli tibbiy va yo'l sug'urtasi. Sizning xavfsizligingiz kafolatlangan."
+    },
+    "hotelBooking": {
+      "title": "Mehmonxona bron qilish",
+      "description": "Dunyoning istalgan nuqtasida mehmonxona tanlash va bron qilish. Eng yaxshi narx kafolati."
+    },
+    "transfer": {
+      "title": "Transfer xizmati",
+      "description": "Aeroport — mehmonxona va boshqa yo'nalishlarda qulay transfer xizmati."
+    }
+  },
+  "contacts": {
+    "title": "Aloqa",
+    "subtitle": "Biz bilan bog'laning — har qanday savolingizga javob beramiz",
+    "form": {
+      "name": "Ismingiz",
+      "email": "Elektron pochta",
+      "phone": "Telefon raqam",
+      "message": "Xabaringiz",
+      "subject": "Mavzu",
+      "send": "Yuborish",
+      "success": "Xabaringiz muvaffaqiyatli yuborildi!"
+    },
+    "info": {
+      "address": "Manzil",
+      "phone": "Telefon",
+      "email": "Elektron pochta",
+      "workingHours": "Ish vaqti",
+      "workingHoursValue": "Du–Ju: 09:00 – 18:00\nSha: 10:00 – 15:00"
+    }
+  },
+  "privacy": {
+    "title": "Maxfiylik siyosati",
+    "intro": "Ushbu Maxfiylik siyosati «Sayohat Tour» MChJ tomonidan qabul qilingan bo'lib, foydalanuvchilarning shaxsiy ma'lumotlarini to'plash, saqlash va ishlatish tartibini belgilaydi.",
+    "collection": {
+      "title": "Ma'lumotlarni to'plash",
+      "content": "Biz quyidagi ma'lumotlarni to'plashimiz mumkin: ism-familiya, telefon raqami, elektron pochta manzili, passport ma'lumotlari (tur bron qilishda). Ma'lumotlar faqat xizmat ko'rsatish maqsadida ishlatiladi."
+    },
+    "usage": {
+      "title": "Ma'lumotlardan foydalanish",
+      "content": "Shaxsiy ma'lumotlaringiz faqat buyurtmalarni qayta ishlash, xizmat sifatini yaxshilash va siz bilan bog'lanish uchun ishlatiladi."
+    },
+    "protection": {
+      "title": "Ma'lumotlarni himoyalash",
+      "content": "Biz shaxsiy ma'lumotlaringizni himoya qilish uchun zamonaviy xavfsizlik choralarini qo'llaymiz. Ma'lumotlar uchinchi shaxslarga sizning roziligisiz berilmaydi."
+    }
+  },
+  "terms": {
+    "title": "Foydalanish shartlari",
+    "intro": "Ushbu veb-saytdan foydalanish quyidagi shartlar va qoidalarga rioya qilishni anglatadi.",
+    "general": {
+      "title": "Umumiy shartlar",
+      "content": "«Sayohat Tour» O'zbekiston Respublikasi qonunchiligiga muvofiq turistik faoliyat yuritadi. Kompaniya O'zbekiston Respublikasi Turizm qo'mitasi tomonidan berilgan litsenziya asosida ishlaydi."
+    },
+    "booking": {
+      "title": "Bron qilish shartlari",
+      "content": "Turni bron qilish uchun oldindan to'lov talab qilinadi. Bekor qilish shartlari har bir tur uchun alohida belgilanadi va shartnomada ko'rsatiladi."
+    },
+    "liability": {
+      "title": "Javobgarlik",
+      "content": "Kompaniya o'z majburiyatlarini to'liq bajarish uchun javobgar. Fors-major holatlarda kompaniya javobgarlikdan ozod qilinadi."
+    }
+  },
+  "common": {
+    "readMore": "Batafsil",
+    "viewAll": "Barchasini ko'rish",
+    "bookNow": "Hozir buyurtma berish",
+    "learnMore": "Ko'proq bilish",
+    "send": "Yuborish",
+    "search": "Qidirish",
+    "from": "dan",
+    "perPerson": "kishi/uchun",
+    "nights": "kecha",
+    "days": "kun",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Manzil",
+    "yearRound": "Yil davomida",
+    "allRightsReserved": "Barcha huquqlar himoyalangan"
+  }
+}

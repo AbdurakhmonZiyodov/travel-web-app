@@ -1,0 +1,226 @@
+{
+  "metadata": {
+    "title": "Sayohat Tour — Trusted Tour Operator in Tashkent",
+    "description": "The best travel agency in Uzbekistan. Tours worldwide, flight tickets, visa support and travel insurance."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "tours": "Tours",
+    "hotTours": "Hot Deals",
+    "services": "Services",
+    "destinations": "Destinations",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "title": "Discover the World with Us",
+    "subtitle": "Your trusted travel partner in Uzbekistan. Quality tours at the best prices.",
+    "cta": "Find a Tour",
+    "searchPlaceholder": "Where do you want to go?"
+  },
+  "destinations": {
+    "title": "Popular Destinations",
+    "subtitle": "Most sought-after countries and resorts among travelers",
+    "viewAll": "All Destinations",
+    "nights": "nights",
+    "from": "from",
+    "perPerson": "per person"
+  },
+  "categories": {
+    "title": "Tour Types",
+    "subtitle": "Tours for every taste and budget",
+    "beach": "Beach Holidays",
+    "excursions": "Excursions",
+    "europe": "Europe",
+    "cruises": "Cruises",
+    "skiing": "Skiing",
+    "health": "Health & Wellness"
+  },
+  "popularTours": {
+    "title": "Popular Tours",
+    "subtitle": "Tours most frequently chosen by our clients",
+    "viewAll": "All Tours",
+    "details": "Details",
+    "book": "Book Now",
+    "from": "from",
+    "perPerson": "per person",
+    "nights": "nights",
+    "days": "days",
+    "yearRound": "Year-round",
+    "seasonal": "Seasonal"
+  },
+  "whyUs": {
+    "title": "Why Choose Us?",
+    "subtitle": "Reasons why thousands of clients trust us with their vacations",
+    "worldwide": {
+      "title": "Tours Worldwide",
+      "description": "Quality tours at competitive prices. Destinations in over 50 countries."
+    },
+    "insurance": {
+      "title": "Travel Insurance",
+      "description": "Reliable protection abroad. Your safety is our priority."
+    },
+    "tickets": {
+      "title": "Flight & Rail Tickets",
+      "description": "Great deals on any destination. Fast and convenient booking."
+    },
+    "visa": {
+      "title": "Visa Support",
+      "description": "Consultation and assistance at every stage of obtaining a visa."
+    }
+  },
+  "testimonials": {
+    "title": "Client Reviews",
+    "subtitle": "Impressions from those who traveled with us"
+  },
+  "cta": {
+    "title": "Plan Your Dream Vacation",
+    "subtitle": "Our specialists will help you choose the perfect tour",
+    "button": "Get a Free Consultation",
+    "phone": "Call Us"
+  },
+  "footer": {
+    "companyDesc": "Trusted tour operator in Uzbekistan. Quality travel services since 2017.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "contactInfo": "Contact Information",
+    "workingHours": "Working Hours",
+    "workingHoursValue": "Mon–Fri: 09:00 – 18:00, Sat: 10:00 – 15:00",
+    "copyright": "© {year} Sayohat Tour. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Uzbekistan's trusted and experienced tour operator",
+    "description": "Sayohat Tour is a licensed tour operator that has been operating since 2017. We offer our clients the best tours worldwide. The company operates under a license issued by the Tourism Committee of the Republic of Uzbekistan.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To provide every client with an unforgettable travel experience and make travel accessible for everyone."
+    },
+    "vision": {
+      "title": "Our Values",
+      "description": "Reliability, transparency, personalized approach and the highest quality of service."
+    },
+    "experience": "Years of Experience",
+    "clients": "Happy Clients",
+    "destinations": "Destinations",
+    "tours": "Tours Completed"
+  },
+  "tours": {
+    "title": "Tours",
+    "subtitle": "Quality vacations at the best prices",
+    "filter": "Filter",
+    "all": "All",
+    "nights": "nights",
+    "days": "days",
+    "from": "from",
+    "perPerson": "per person",
+    "details": "Details",
+    "book": "Book Now",
+    "included": "Included in Tour",
+    "flight": "Flight",
+    "hotel": "Hotel",
+    "transfer": "Transfer",
+    "insurance": "Insurance",
+    "meals": "Meals",
+    "guide": "Guide Service"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Everything you need for your trip",
+    "tourPackages": {
+      "title": "Tour Packages",
+      "description": "Fully organized tours worldwide. Includes flights, hotel, transfers and insurance."
+    },
+    "visaSupport": {
+      "title": "Visa Support",
+      "description": "Professional consultation and assistance at every stage of obtaining a visa. Document preparation."
+    },
+    "flightTickets": {
+      "title": "Flight Tickets",
+      "description": "Book flight tickets to any destination at competitive prices. Charter and regular flights."
+    },
+    "insurance": {
+      "title": "Travel Insurance",
+      "description": "Reliable medical and travel insurance abroad. Your safety is guaranteed."
+    },
+    "hotelBooking": {
+      "title": "Hotel Booking",
+      "description": "Selection and booking of hotels anywhere in the world. Best price guarantee."
+    },
+    "transfer": {
+      "title": "Transfer Service",
+      "description": "Comfortable airport — hotel transfers and other destinations."
+    }
+  },
+  "contacts": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch — we'll answer any of your questions",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Your Message",
+      "subject": "Subject",
+      "send": "Send Message",
+      "success": "Your message has been sent successfully!"
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "workingHours": "Working Hours",
+      "workingHoursValue": "Mon–Fri: 09:00 – 18:00\nSat: 10:00 – 15:00"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This Privacy Policy is adopted by Sayohat Tour LLC and defines the procedure for collecting, storing and using personal data of users.",
+    "collection": {
+      "title": "Data Collection",
+      "content": "We may collect the following data: full name, phone number, email address, passport details (when booking a tour). Data is used exclusively for providing services."
+    },
+    "usage": {
+      "title": "Data Usage",
+      "content": "Your personal data is used only for processing orders, improving service quality and contacting you."
+    },
+    "protection": {
+      "title": "Data Protection",
+      "content": "We apply modern security measures to protect your personal data. Data is not shared with third parties without your consent."
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "intro": "Using this website implies compliance with the following terms and conditions.",
+    "general": {
+      "title": "General Terms",
+      "content": "Sayohat Tour conducts tourism activities in accordance with the legislation of the Republic of Uzbekistan. The company operates under a license issued by the Tourism Committee of the Republic of Uzbekistan."
+    },
+    "booking": {
+      "title": "Booking Terms",
+      "content": "Advance payment is required to book a tour. Cancellation terms are determined individually for each tour and specified in the contract."
+    },
+    "liability": {
+      "title": "Liability",
+      "content": "The company bears full responsibility for fulfilling its obligations. In case of force majeure circumstances, the company is released from liability."
+    }
+  },
+  "common": {
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "bookNow": "Book Now",
+    "learnMore": "Learn More",
+    "send": "Send",
+    "search": "Search",
+    "from": "from",
+    "perPerson": "per person",
+    "nights": "nights",
+    "days": "days",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "yearRound": "Year-round",
+    "allRightsReserved": "All rights reserved"
+  }
+}

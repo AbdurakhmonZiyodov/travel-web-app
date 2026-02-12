@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/* ──────────────────────────────────────────────
+   Theme — custom design tokens for Sayohat Tour
+   ────────────────────────────────────────────── */
+@theme inline {
+  --color-primary: #0F4C81;
+  --color-primary-light: #2E7CB8;
+  --color-primary-dark: #0A3457;
+  --color-secondary: #E76F51;
+  --color-secondary-light: #F4A261;
+  --color-accent: #2EC4B6;
+  --color-accent-light: #5EDDD1;
+  --color-surface: #F7F8FC;
+  --color-surface-dark: #E8ECF4;
+  --color-text-primary: #1A1A2E;
+  --color-text-secondary: #4A5568;
+  --color-text-muted: #9CA3AF;
+  --font-sans: var(--font-geist-sans);
+}
+
+/* ──────────────────────────────────────────────
+   Base styles
+   ────────────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  color: var(--color-text-primary);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ──────────────────────────────────────────────
+   Button variants
+   ────────────────────────────────────────────── */
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 bg-secondary text-white px-6 py-3 hover:bg-secondary-light focus:ring-secondary;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 bg-primary text-white px-6 py-3 hover:bg-primary-light focus:ring-primary;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 border-2 border-primary text-primary px-6 py-3 hover:bg-primary hover:text-white focus:ring-primary;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 text-primary px-4 py-2 hover:bg-surface focus:ring-primary;
+}
+
+.btn-sm {
+  @apply text-sm px-4 py-2;
+}
+
+.btn-lg {
+  @apply text-lg px-8 py-4;
+}
+
+/* ──────────────────────────────────────────────
+   Layout components
+   ────────────────────────────────────────────── */
+.container-main {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+/* ──────────────────────────────────────────────
+   Typography
+   ────────────────────────────────────────────── */
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-text-primary;
+}
+
+.section-subtitle {
+  @apply mt-3 text-lg text-text-secondary max-w-2xl;
+}
+
+/* ──────────────────────────────────────────────
+   Card
+   ────────────────────────────────────────────── */
+.card {
+  @apply bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+/* ──────────────────────────────────────────────
+   Form elements
+   ────────────────────────────────────────────── */
+.input {
+  @apply w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-text-primary placeholder:text-text-muted focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-colors;
+}
+
+.textarea {
+  @apply w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-text-primary placeholder:text-text-muted focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-colors resize-none min-h-[120px];
+}
+
+/* ──────────────────────────────────────────────
+   Badges
+   ────────────────────────────────────────────── */
+.badge-primary {
+  @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium bg-primary/10 text-primary;
+}
+
+.badge-secondary {
+  @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium bg-secondary/10 text-secondary;
+}
+
+.badge-accent {
+  @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium bg-accent/10 text-accent;
+}
+
+/* ──────────────────────────────────────────────
+   Misc overrides
+   ────────────────────────────────────────────── */
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-primary) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary) !important;
+}
