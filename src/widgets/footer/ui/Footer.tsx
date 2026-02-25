@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@i18n/navigation";
-import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from "lucide-react";
 import { THEME } from "@/shared/config/theme";
 import { FOOTER_NAV } from "@/shared/config/navigation";
 
@@ -18,6 +19,15 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:pr-4">
             <div className="flex items-center gap-2.5">
+              <div className="relative h-10 w-10 overflow-hidden rounded-xl bg-white">
+                <Image
+                  src="/terra-nova-logo.png"
+                  alt={THEME.companyName}
+                  fill
+                  className="object-contain"
+                  sizes="40px"
+                />
+              </div>
               <span className="text-xl font-bold">{THEME.companyName}</span>
             </div>
             <p className="mt-5 text-sm leading-relaxed text-white/70">
@@ -51,20 +61,7 @@ export function Footer() {
                 className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 transition-colors hover:bg-white/20"
                 aria-label="WhatsApp"
               >
-                <svg viewBox="0 0 32 32" className="h-4 w-4 fill-current">
-                  <path d="M16 3C9.383 3 4 8.383 4 15c0 2.326.676 4.49 1.957 6.39L4 29l7.793-1.922A11.9 11.9 0 0 0 16 27c6.617 0 12-5.383 12-12S22.617 3 16 3Zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.9 9.9 0 0 1-3.938-.805l-.28-.12-4.53 1.118 1.21-4.39-.145-.226A9.9 9.9 0 0 1 6 15c0-5.523 4.477-10 10-10Zm-3.164 5.002c-.23-.005-.476.003-.738.02-.383.026-.79.123-1.098.442-.313.325-.98.957-.98 2.332 0 1.375 1.004 2.703 1.144 2.891.14.188 1.976 3.162 4.826 4.303 2.383.947 2.866.852 3.377.8.52-.05 1.664-.68 1.9-1.338.237-.658.237-1.222.166-1.338-.07-.117-.26-.188-.542-.329-.283-.141-1.664-.82-1.92-.912-.256-.094-.443-.141-.63.142-.188.28-.723.911-.887 1.098-.164.188-.328.212-.61.07-.283-.14-1.195-.44-2.277-1.402-.842-.75-1.41-1.676-1.574-1.958-.164-.28-.018-.432.123-.573.127-.126.283-.328.424-.492.141-.164.188-.282.283-.47.094-.188.047-.352-.023-.493-.07-.14-.62-1.516-.876-2.078-.23-.5-.469-.512-.698-.518Z" />
-                </svg>
-              </a>
-              <a
-                href={THEME.socialLinks.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 transition-colors hover:bg-white/20"
-                aria-label="Facebook"
-              >
-                <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                </svg>
+                <MessageCircle className="h-4 w-4" />
               </a>
             </div>
           </div>

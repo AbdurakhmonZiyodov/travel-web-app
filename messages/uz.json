@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Sayohat Tour — Toshkentdagi ishonchli turoperator",
-    "description": "O'zbekistondagi eng yaxshi turistik agentlik. Dunyo bo'ylab turlar, aviachiptalar, viza ko'magi va sug'urta xizmatlari."
+    "title": "Terra Nova Travel — Samarqanddagi ishonchli turoperator",
+    "description": "O'zbekistondagi zamonaviy turistik agentlik. Dunyo bo'ylab turlar, aviachiptalar, viza ko'magi va sug'urta xizmatlari."
   },
   "nav": {
     "home": "Bosh sahifa",
@@ -80,20 +80,20 @@
     "phone": "Qo'ng'iroq qiling"
   },
   "footer": {
-    "companyDesc": "O'zbekistondagi ishonchli turoperator. 2017-yildan beri sifatli sayohat xizmatlari.",
+    "companyDesc": "O'zbekistondagi ishonchli turoperator. 2021-yildan beri sifatli sayohat xizmatlari.",
     "quickLinks": "Tezkor havolalar",
     "ourServices": "Xizmatlarimiz",
     "contactInfo": "Aloqa ma'lumotlari",
     "workingHours": "Ish vaqti",
     "workingHoursValue": "Du–Ju: 09:00 – 18:00, Sha: 10:00 – 15:00",
-    "copyright": "© {year} Sayohat Tour. Barcha huquqlar himoyalangan.",
+    "copyright": "© {year} Terra Nova Travel. Barcha huquqlar himoyalangan.",
     "privacy": "Maxfiylik siyosati",
     "terms": "Foydalanish shartlari"
   },
   "about": {
     "title": "Biz haqimizda",
     "subtitle": "O'zbekistonning ishonchli va tajribali turoperatori",
-    "description": "«Sayohat Tour» — 2017-yildan beri faoliyat yuritayotgan litsenziyalangan turoperator. Biz mijozlarimizga dunyo bo'ylab eng yaxshi turlarni taklif etamiz. Kompaniyamiz O'zbekiston Respublikasi Turizm qo'mitasi tomonidan berilgan litsenziya asosida ishlaydi.",
+    "description": "Terra Nova Travel — 2021-yildan beri faoliyat yuritayotgan litsenziyalangan turoperator. Biz mijozlarimizga dunyo bo'ylab eng yaxshi turlarni taklif etamiz. Kompaniyamiz O'zbekiston Respublikasi Turizm qo'mitasi tomonidan berilgan litsenziya asosida ishlaydi.",
     "mission": {
       "title": "Bizning missiyamiz",
       "description": "Har bir mijozga unutilmas sayohat tajribasini taqdim etish va sayohatni hammaga qulay qilish."
@@ -176,7 +176,7 @@
   },
   "privacy": {
     "title": "Maxfiylik siyosati",
-    "intro": "Ushbu Maxfiylik siyosati «Sayohat Tour» MChJ tomonidan qabul qilingan bo'lib, foydalanuvchilarning shaxsiy ma'lumotlarini to'plash, saqlash va ishlatish tartibini belgilaydi.",
+    "intro": "Ushbu Maxfiylik siyosati «Terra Nova Travel» MChJ tomonidan qabul qilingan bo'lib, foydalanuvchilarning shaxsiy ma'lumotlarini to'plash, saqlash va ishlatish tartibini belgilaydi.",
     "collection": {
       "title": "Ma'lumotlarni to'plash",
       "content": "Biz quyidagi ma'lumotlarni to'plashimiz mumkin: ism-familiya, telefon raqami, elektron pochta manzili, passport ma'lumotlari (tur bron qilishda). Ma'lumotlar faqat xizmat ko'rsatish maqsadida ishlatiladi."
@@ -195,7 +195,7 @@
     "intro": "Ushbu veb-saytdan foydalanish quyidagi shartlar va qoidalarga rioya qilishni anglatadi.",
     "general": {
       "title": "Umumiy shartlar",
-      "content": "«Sayohat Tour» O'zbekiston Respublikasi qonunchiligiga muvofiq turistik faoliyat yuritadi. Kompaniya O'zbekiston Respublikasi Turizm qo'mitasi tomonidan berilgan litsenziya asosida ishlaydi."
+      "content": "«Terra Nova Travel» O'zbekiston Respublikasi qonunchiligiga muvofiq turistik faoliyat yuritadi. Kompaniya O'zbekiston Respublikasi Turizm qo'mitasi tomonidan berilgan litsenziya asosida ishlaydi."
     },
     "booking": {
       "title": "Bron qilish shartlari",

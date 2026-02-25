@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Sayohat Tour — Trusted Tour Operator in Tashkent",
-    "description": "The best travel agency in Uzbekistan. Tours worldwide, flight tickets, visa support and travel insurance."
+    "title": "Terra Nova Travel — Trusted Tour Operator in Samarkand",
+    "description": "Modern travel agency in Uzbekistan. Tours worldwide, flight tickets, visa support and travel insurance."
   },
   "nav": {
     "home": "Home",
@@ -80,20 +80,20 @@
     "phone": "Call Us"
   },
   "footer": {
-    "companyDesc": "Trusted tour operator in Uzbekistan. Quality travel services since 2017.",
+    "companyDesc": "Trusted tour operator in Uzbekistan. Quality travel services since 2021.",
     "quickLinks": "Quick Links",
     "ourServices": "Our Services",
     "contactInfo": "Contact Information",
     "workingHours": "Working Hours",
     "workingHoursValue": "Mon–Fri: 09:00 – 18:00, Sat: 10:00 – 15:00",
-    "copyright": "© {year} Sayohat Tour. All rights reserved.",
+    "copyright": "© {year} Terra Nova Travel. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
   "about": {
     "title": "About Us",
     "subtitle": "Uzbekistan's trusted and experienced tour operator",
-    "description": "Sayohat Tour is a licensed tour operator that has been operating since 2017. We offer our clients the best tours worldwide. The company operates under a license issued by the Tourism Committee of the Republic of Uzbekistan.",
+    "description": "Terra Nova Travel is a licensed tour operator that has been operating since 2021. We offer our clients the best tours worldwide. The company operates under a license issued by the Tourism Committee of the Republic of Uzbekistan.",
     "mission": {
       "title": "Our Mission",
       "description": "To provide every client with an unforgettable travel experience and make travel accessible for everyone."
@@ -176,7 +176,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "intro": "This Privacy Policy is adopted by Sayohat Tour LLC and defines the procedure for collecting, storing and using personal data of users.",
+    "intro": "This Privacy Policy is adopted by Terra Nova Travel LLC and defines the procedure for collecting, storing and using personal data of users.",
     "collection": {
       "title": "Data Collection",
       "content": "We may collect the following data: full name, phone number, email address, passport details (when booking a tour). Data is used exclusively for providing services."
@@ -195,7 +195,7 @@
     "intro": "Using this website implies compliance with the following terms and conditions.",
     "general": {
       "title": "General Terms",
-      "content": "Sayohat Tour conducts tourism activities in accordance with the legislation of the Republic of Uzbekistan. The company operates under a license issued by the Tourism Committee of the Republic of Uzbekistan."
+      "content": "Terra Nova Travel conducts tourism activities in accordance with the legislation of the Republic of Uzbekistan. The company operates under a license issued by the Tourism Committee of the Republic of Uzbekistan."
     },
     "booking": {
       "title": "Booking Terms",

@@ -9,9 +9,9 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     tour: "Thailand — Phuket",
     text: {
-      uz: "Sayohat Tour bilan Tailandga ajoyib sayohat qildik. Hammasi a'lo darajada tashkil etilgan edi — parvoz, transfer, mehmonxona. Mutaxassislar doimo aloqada bo'lishdi va har qanday savolimizga tez javob berishdi. Albatta yana murojaat qilamiz!",
-      ru: "С Sayohat Tour совершили прекрасное путешествие в Таиланд. Всё было организовано на высшем уровне — перелёт, трансфер, отель. Специалисты всегда были на связи и быстро отвечали на любые вопросы. Обязательно обратимся снова!",
-      en: "We had an amazing trip to Thailand with Sayohat Tour. Everything was perfectly organized — flight, transfer, hotel. The team was always available and responded to all our questions quickly. We'll definitely come back!",
+      uz: "Terra Nova Travel bilan Tailandga ajoyib sayohat qildik. Hammasi a'lo darajada tashkil etilgan edi — parvoz, transfer, mehmonxona. Mutaxassislar doimo aloqada bo'lishdi va har qanday savolimizga tez javob berishdi. Albatta yana murojaat qilamiz!",
+      ru: "С Terra Nova Travel совершили прекрасное путешествие в Таиланд. Всё было организовано на высшем уровне — перелёт, трансфер, отель. Специалисты всегда были на связи и быстро отвечали на любые вопросы. Обязательно обратимся снова!",
+      en: "We had an amazing trip to Thailand with Terra Nova Travel. Everything was perfectly organized — flight, transfer, hotel. The team was always available and responded to all our questions quickly. We'll definitely come back!",
     },
   },
   {
@@ -22,9 +22,9 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     tour: "Turkey — Antalya",
     text: {
-      uz: "Turkiyaga oilaviy tur oldik — hammasi zo'r o'tdi! Mehmonxona tanlashda mutaxassislar juda yaxshi maslahat berishdi. Narx ham boshqa agentliklarga qaraganda ancha qulay edi. Rahmat, Sayohat Tour!",
-      ru: "Купили семейный тур в Турцию — всё прошло отлично! Специалисты отлично помогли с выбором отеля. Цена была значительно ниже, чем в других агентствах. Спасибо, Sayohat Tour!",
-      en: "We bought a family tour to Turkey — everything went great! The specialists gave excellent advice on choosing a hotel. The price was much better than other agencies. Thank you, Sayohat Tour!",
+      uz: "Turkiyaga oilaviy tur oldik — hammasi zo'r o'tdi! Mehmonxona tanlashda mutaxassislar juda yaxshi maslahat berishdi. Narx ham boshqa agentliklarga qaraganda ancha qulay edi. Rahmat, Terra Nova Travel!",
+      ru: "Купили семейный тур в Турцию — всё прошло отлично! Специалисты отлично помогли с выбором отеля. Цена была значительно ниже, чем в других агентствах. Спасибо, Terra Nova Travel!",
+      en: "We bought a family tour to Turkey — everything went great! The specialists gave excellent advice on choosing a hotel. The price was much better than other agencies. Thank you, Terra Nova Travel!",
     },
   },
   {
@@ -48,9 +48,9 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     tour: "UAE — Dubai",
     text: {
-      uz: "Dugonalarim bilan Dubayga tur oldik. Sayohat Tour jamoasi eng yaxshi narxni topib berdi, mehmonxona ajoyib edi. Professional xizmat ko'rsatish va har bir savolga e'tibor. Tavsiya qilaman!",
-      ru: "Купили тур в Дубай с подругами. Команда Sayohat Tour нашла лучшую цену, отель был превосходный. Профессиональное обслуживание и внимание к каждому вопросу. Рекомендую!",
-      en: "We bought a tour to Dubai with friends. The Sayohat Tour team found the best price, the hotel was excellent. Professional service and attention to every question. Highly recommend!",
+      uz: "Dugonalarim bilan Dubayga tur oldik. Terra Nova Travel jamoasi eng yaxshi narxni topib berdi, mehmonxona ajoyib edi. Professional xizmat ko'rsatish va har bir savolga e'tibor. Tavsiya qilaman!",
+      ru: "Купили тур в Дубай с подругами. Команда Terra Nova Travel нашла лучшую цену, отель был превосходный. Профессиональное обслуживание и внимание к каждому вопросу. Рекомендую!",
+      en: "We bought a tour to Dubai with friends. The Terra Nova Travel team found the best price, the hotel was excellent. Professional service and attention to every question. Highly recommend!",
     },
   },
 ];
