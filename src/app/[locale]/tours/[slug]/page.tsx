@@ -28,6 +28,23 @@ const INCLUSION_ICONS: Record<TourInclusion, { icon: typeof Plane; label: string
   guide: { icon: UserCheck, label: "tours.guide" },
 };
 
+/** Hero needs higher resolution than card; avoid stretching 800px to full width. */
+function getHeroImageUrl(cardImageUrl: string): string {
+  try {
+    const u = new URL(cardImageUrl);
+    if (u.hostname.includes("unsplash.com")) {
+      u.searchParams.set("w", "1920");
+      u.searchParams.set("h", "1080");
+      u.searchParams.set("fit", "crop");
+      u.searchParams.set("q", "85");
+      return u.toString();
+    }
+  } catch {
+    // ignore
+  }
+  return cardImageUrl;
+}
+
 export default function TourDetailPage({
   params,
 }: {
@@ -54,10 +71,10 @@ export default function TourDetailPage({
 
   return (
     <>
-      {/* Hero Image */}
+      {/* Hero Image — use high-res URL so it stays sharp at full width */}
       <section className="relative h-[400px] md:h-[500px]">
         <Image
-          src={tour.image}
+          src={getHeroImageUrl(tour.image)}
           alt={tour.title[locale]}
           fill
           className="object-cover"

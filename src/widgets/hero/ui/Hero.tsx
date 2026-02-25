@@ -49,13 +49,13 @@ export function Hero() {
         </div>
 
         {/* Stats */}
-        <div className="mt-20 grid grid-cols-3 gap-12 md:gap-20">
+        <div className="mt-16 grid grid-cols-3 gap-6 sm:gap-10 md:gap-16 lg:gap-20">
           {stats.map((stat) => (
-            <div key={stat.labelKey} className="text-center">
-              <div className="text-3xl font-bold text-white md:text-4xl">
+            <div key={stat.labelKey} className="flex min-w-0 flex-col items-center text-center">
+              <div className="whitespace-nowrap text-2xl font-bold text-white sm:text-3xl md:text-4xl">
                 {stat.value}
               </div>
-              <div className="mt-2 text-sm text-white/60 uppercase tracking-wider">
+              <div className="mt-1.5 text-xs leading-tight text-white/60 uppercase tracking-wider sm:text-sm">
                 {t(stat.labelKey)}
               </div>
             </div>
