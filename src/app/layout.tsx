@@ -9,8 +9,20 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Sayohat Tour",
-  description: "Trusted tour operator in Tashkent, Uzbekistan",
+  title: "Terra Nova Travel",
+  description:
+    "Terra Nova Travel — trusted tour operator in Samarkand, Uzbekistan.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+    shortcut: "/favicon.png",
+  },
+  openGraph: {
+    title: "Terra Nova Travel",
+    description:
+      "Modern travel agency in Uzbekistan with tours worldwide, flight tickets, visa support and insurance.",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
