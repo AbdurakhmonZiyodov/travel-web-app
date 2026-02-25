@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Phone, Menu, X } from "lucide-react";
 import { Link } from "@i18n/navigation";
@@ -18,11 +19,17 @@ export function Header() {
       <div className="container-main">
         <div className="flex h-16 items-center justify-between md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white font-bold text-lg">
-              S
+          <Link href="/" className="flex items-center gap-3">
+            <div className="relative h-10 w-10 md:h-11 md:w-11">
+              <Image
+                src="/terra-nova-logo.png"
+                alt={THEME.companyName}
+                fill
+                sizes="44px"
+                className="object-contain"
+              />
             </div>
-            <span className="text-xl font-bold text-text-primary">
+            <span className="text-lg font-semibold text-text-primary md:text-xl">
               {THEME.companyName}
             </span>
           </Link>

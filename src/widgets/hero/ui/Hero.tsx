@@ -7,7 +7,7 @@ export function Hero() {
   const t = useTranslations();
 
   const stats = [
-    { value: "7+", labelKey: "about.experience" },
+    { value: "5+", labelKey: "about.experience" },
     { value: "5 000+", labelKey: "about.clients" },
     { value: "50+", labelKey: "about.destinations" },
   ];
