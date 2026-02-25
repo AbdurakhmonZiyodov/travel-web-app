@@ -28,8 +28,7 @@ export const THEME = {
   socialLinks: {
     telegram: "https://t.me/Firdavs_ruzimurodov",
     instagram: "https://www.instagram.com/terra_nova.uz/",
-    whatsapp:
-      "https://api.whatsapp.com/send?phone=998973912104&text=Hi%2C%20how%20can%20I%20place%20an%20order%3F%0ASalom%2Cqanday%20%20buyurtma%20%20qilsam%20%20bo%E2%80%98ladi%3F%0A%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BA%D0%B0%D0%BA%20%D1%8F%20%D0%BC%D0%BE%D0%B3%D1%83%20%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%3F",
+    whatsapp: "https://wa.me/998770479966",
     facebook: "https://facebook.com",
   },
 } as const;

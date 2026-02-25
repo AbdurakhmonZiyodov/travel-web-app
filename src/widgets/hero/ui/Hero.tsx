@@ -1,7 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { TourSearch } from "@/features/tour-search";
+
+const REGISTAN_IMAGE = "/registan.jpg";
 
 export function Hero() {
   const t = useTranslations();
@@ -13,20 +16,26 @@ export function Hero() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary-dark to-primary">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Ccircle cx='5' cy='5' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}
+    <section className="relative min-h-[90vh] overflow-hidden">
+      {/* Registan background image */}
+      <div className="absolute inset-0">
+        <Image
+          src={REGISTAN_IMAGE}
+          alt="Registon, Samarqand"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
         />
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-primary-dark/75" />
+        {/* Subtle gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-transparent to-primary/40" />
       </div>
 
-      {/* Decorative circles */}
-      <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-secondary/20 blur-3xl" />
-      <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-accent/20 blur-3xl" />
+      {/* Decorative blur */}
+      <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-secondary/10 blur-3xl" />
+      <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-accent/10 blur-3xl" />
 
       <div className="container-main relative z-10 flex flex-col items-center px-4 py-28 text-center md:py-40 lg:py-48">
         <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
